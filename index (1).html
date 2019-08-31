@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+     <script src="jquery-3.2.1.js"></script>
+     <script src="script.js"></script>
+     <script src="script1.js"></script>
+     <script src="slideshow.js"></script>
+    
+    <link rel="stylesheet" href="estilo2.css">
+    
+    <style>
+        .menu{
+       font-family: Letter Gothic Std, serif;
+        }
+    </style>
+    
+    </head>
+    <body onload="currentSlide(1)">
+
+<div class="slideshow-container"> 
+    <div class="mySlides fade" style="display:inline">
+        <a href="faq.html"><img src="banner_duvidas.fw.png" class="imagens" target="_blank"></a>
+        </div>
+
+  <div class="mySlides fade">
+ <a href="anidisp.php"><img src="banner_gato.fw.png" class="imagens" target="_blank"></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="doar.html"><img src="banner_hamster.jpg" class="imagens" target="_blank"></a>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<br>
+        
+     <!-----------MENU------------>
+        
+        
+        <center class="menu">
+            <button id="dropbtn">
+                <img src="icone_menu.fw.png"></button>
+            <div id="lateral">
+              <div id="menu">  
+            <h3 class="link-titulo">Destaques</h3>
+                <ul class="box">
+                
+            <li><a href="index.html" title="INÍCIO">INÍCIO</a></li>
+                
+            <li><a href ="anidisp.php" title="ANIMAIS DISPONÍVEIS">ANIMAIS DISPONÍVEIS</a></li>
+                
+            <li><a href="doar.html" title="DOE UM BICHINHO">DOE UM BICHINHO</a></li>
+                
+           
+                
+            <li><a href="faq.html" title="PARCEIROS">F.A.Q.</a></li>
+                    
+            <li><a href="quemsomos.html" title="QUEM SOMOS">QUEM SOMOS</a></li>
+                    
+            <li><a href="#janela1" rel="modal" title="LOGIN">LOGIN</a></li>
+                    
+            </ul>
+            
+       
+    </div>
+</div>
+
+    </center>
+        
+        <!-----LOGIN----->
+        
+        <div class="window" id="janela1">
+    <center><a href="#" class="fechar"><img src="fechar.png" width="6%" title="Fechar" alt="Fechar"></a>
+    <h1>LOGIN</h1>
+        <form>
+        <p> Usuário <input type="text" name="login" 
+        id="login" placeholder="Nome do Usuário"  maxlength="30"></p>
+         
+        <p>Senha <input type="password" id="senha" placeholder="Senha"  name="psw" maxlength="12"></p>
+         <input type="button" name="enter" onClick="entra()" value="Entrar">
+        <input type="reset" name="Btlimpa" value="Limpar">
+        
+            <p><input id="Resp" readonly style="text-align:center;border:0px;background-color: #FFF;color:red;font-size:9pt;width: 70%;"></p>
+        
+            
+        </form>
+        Ainda não tem login? <br/><a style="text-decoration:none;color:black" href="#" title="Cadastrar-se" alt="Cadastrar-se"><b>Cadastre-se.</b></a>
+        </center>
+</div>
+ 
+ <!-- mascara para cobrir o site -->  
+<div id="mascara"></div>
+        
+        
+      
+     <!----IMAGENS DOS ANIMAIS---->  
+        <div class="image"> <img src="disponivel_dog.png" class="image"></div>
+        <div class="image2"><img src="gatinho_page.fw.png" class="image2"></div>
+    
+    <div class="caixa1"><center> <a href="#"><img src="dicaspets.fw.png" target="_self" alt="Dicas para Pets"></a></center></div><div class="caixa2"><center><a href="faq.html"><img src="faqimg.fw.png" target="_self" alt="Perguntas Frequentes"> </a> </center></div>
+        
+    
+<!----PATROCINADORES---->  
+    <div class="patrocinador"><center><img src="patrocinadores.fw.png" width="30%"></center> 
+        <div class="patrocinadores"><a href="https://www.animalplanet.com/"> <img src="logo_animalplanet.png" class="patrocinadores"></a></div> 
+        
+        <div class="patrocinadores"> <a href="http://www.greenpeace.org/brasil/pt/"><img src="logo_greenpeace.png" class="patrocinadores"></a></div> 
+        <div class="patrocinadores"> <a href="https://www.pedigree.com.br/"> <img src="logo_pedigree.png" class="patrocinadores"></a>
+        </div> <div class="patrocinadores"> <a href="http://tudosobrecachorros.com.br/"> <img src="logo_tudodog.png" class="patrocinadores"></a></div>
+        </div>
+        
+        
+        
+<!----PROPAGANDA---->  
+        <div class="propaganda"><img src="background-propaganda.fw.png" class="propaganda"> <center> <div class="banpropaganda"> <a href="http://cosmaker.000webhostapp.com/"> <img src="Cosmaker_banner_1000x121.jpg" class="banpropaganda"></a></div></center> </div>
+        
+        
+<!----RODAPÉ---->
+<div class="rodape"><footer class="footer">
+            <div class="sobrerodape">
+       SOBRE O SITE: <br>
+            O Amigo Pet é um site sem fins lucrativos <br />composto por ONGs e voluntários protetores que atuam na defesa <br /> e bem estar animal. </div>
+            
+            
+            <div class="paginas1">
+            
+                <p>
+                <a style="text-decoration:none;color:white" href="anidisp.php" title="ADOTAR"> • Animais Disponíveis</a><br/>
+                    <a style="text-decoration:none;color:white" href="doar.html" title="DOAR BICHINHO"> • Doar um bichinho</a><br/>
+                    <a style="text-decoration:none;color:white" href="faq.html" title="F.A.Q."> • F.A.Q.</a>
+                    
+                </p>
+            
+            </div>
+            
+            <div class="paginas2">
+            <p>
+                <a style="text-decoration:none;color:white" href="quemsomos.html" title="QUEM SOMOS"> • Quem Somos</a> <br/>
+                <a style="text-decoration:none;color:white" href="#janela1" rel="modal" title="LOGIN"> • Login</a>
+                </p>
+            </div>
+            
+            <center><div class="redes">
+            <a href="https://pt-br.facebook.com/" > <img src="facebook.png" title="Facebook" width="27%" alt="Facebook" target="_blank"></a>
+            <a href="https://twitter.com/login?lang=pt" > <img src="twitter.png" title="Twitter" width="27%" alt="Twitter" target="_blank"></a>
+                
+            </div> <!--div redes-->
+                </center>
+            
+            
+            <center> <div class="credito">Amigo Pet © 2017 - Todos os direito reservados - Designed by Grupo 2(dois), Programador Web - Senac, Plug Minas.</div></center> 
+            
+         </footer>
+      </div>
+      
+        
+        
+    </body>
+</html>

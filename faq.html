@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="utf-8">
+    <script src="jquery-3.2.1.js"></script>
+     <script src="script.js"></script>
+     <script src="script1.js"></script>
+     <link rel="stylesheet" href="estilo2.css">
+    <title> F.A.Q </title>
+   
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+.li2 {
+    list-style-type: none;
+    font-family: 'Flamenco', cursive;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4B3421;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+.li1 {
+    float: left;
+    position: relative;
+    width: 14%;
+    height: auto; 
+} 
+        
+        .li1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5% 15%;
+    text-decoration: none;
+}
+.li1 a:hover:not(.active) {
+    background-color: #4B3421;
+    font-size:75%;
+    padding:5%;
+}
+        
+        .logo {
+            width: 6%;
+        }
+        .banner {
+            width: 100%;
+            height: 25%;
+            margin-top: 1%;
+            
+        }
+        
+        .procurar{
+            width: 22%;
+            height: 30%;
+            margin-top: 16%;
+            
+        }
+        
+        
+        /*--------- TAMANHO ANUNCIO INDEX 1050 x 121 ----*/
+        .anuncio {
+            background-color: #D7B78B;
+            width: 15%;
+            height: 33%;
+            margin-left: 0.33%;
+            font-family: monospace;
+            position: absolute;
+            font-size: 100%;
+            float: left;  
+        }
+        
+        
+        .janelaprincipal {
+            width: 60%;
+            background-color: #ccc;
+            height: auto;
+            margin-left: 16%;
+            float: left;
+            position: relative;
+            padding-top: 4%; 
+            padding-left: 6%;
+            padding-right: 6%;
+            padding-bottom: 4%;
+            font-family: 'Flamenco', cursive;
+              font-size: 120%;}
+        
+        .rodape{
+    background-color: #000000;
+    width: 98%;
+    height: 45%;
+    float: left;
+    color: #ffffff;
+    padding: 2%;
+    height: 12%;
+    font-family: Letter Gothic Std, serif;
+    padding-top: 2%;
+    padding-left: 0%;
+    font-size: 70%;
+    position: static;
+}
+
+ .credito{
+            color: white;
+            font-family: 'Flamenco', cursive;
+            padding-bottom: 0.5%; 
+            margin-top: 0.5%;
+            font-size: 105%;
+            float: center;
+            
+        
+        }
+        .sobrerodape{
+            padding-top: 0.5%;
+            padding-left: 10%;
+            float: left;
+            width: 40%;
+        }
+        
+        .redes{
+            width: 6%;
+            height: 3%;
+            margin-top: 2.2%;
+            float: center;
+           
+            
+            
+        }
+        
+        .paginas1{
+           
+            width: 12%;
+            height: 6%;
+            margin-left: 65%;
+            margin-top: 2%;
+        }
+
+        .paginas2{
+           
+            width: 12%;
+            height: 6%;
+            margin-left: 85%;
+            margin-top: 2%;
+            
+            
+        }
+        </style>
+    </head>
+    <body>
+           <!-----LOGIN----->
+        
+        <div class="window" id="janela1">
+    <center><a href="#" class="fechar"><img src="fechar.png" width="6%" title="Fechar" alt="Fechar"></a>
+    <h1>LOGIN</h1><br/>
+        <form>
+        <p> Usuário <input type="text" name="login" 
+        id="login" placeholder="Nome do Usuário"  maxlength="30"></p><br/>
+         
+        <p>Senha <input type="password" id="senha" placeholder="Senha"  name="psw" maxlength="12"></p><br/>
+         <input type="button" name="enter" onClick="entra()" value="Entrar">
+        <input type="reset" name="Btlimpa" value="Limpar">
+        
+            <p><input id="Resp" readonly style="text-align:center;border:0px;background-color: #FFF;color:red;font-size:9pt;width: 70%;"></p>
+        Ainda não tem login? <br/><br/><a style="text-decoration:none;color:black" href="#" title="Cadastrar-se" alt="Cadastrar-se"><b>Cadastre-se.</b></a>
+            
+        </form>
+        
+        </center>
+</div>
+ 
+ <!-- mascara para cobrir o site -->  
+<div id="mascara"></div>
+        <header>
+            
+            <ul class="li2">
+            <li class="li1"><a href="index.html" title="INÍCIO">INÍCIO</a></li>
+                
+            <li class="li1"> <a href ="anidisp.php" title="ANIMAIS DISPONÍVEIS"> ANIMAIS DIPONÍVEIS</a></li>
+                
+            <li class="li1"><a href="doar.html" title="DOE UM BICHINHO">DOE UM BICHINHO</a></li>
+                
+            <li class="li1"><a href="faq.html" title="F.A.Q.">F.A.Q.</a></li>
+                
+            <li class="li1"><a href="quemsomos.html" title="QUEM SOMOS">QUEM SOMOS</a></li>
+                
+                <li class="li1"><a href="#janela1" rel="modal" title="LOGIN">LOGIN</a></li>
+                
+            <li class="lil"><img href="#" src="logo_mini.fw.png" title="Amigo Pet" alt="Amigo Pet"></li>
+               
+            </ul>
+            
+            
+            
+            <div class="banner">
+            <img src="banner_faq.fw.png" width="100%" height="15%" title="Quem somos" alt="Quem somos"></div>
+            
+        </header>
+        
+        
+        <div class="anuncio">
+        <center>Anúncio <br >
+            <a href="http://cosmaker.000webhostapp.com"> <img src="cosmaker_publi.gif" width="95%" height="75%" title="Cosmaker Anúncio" alt="Cosmaker Anúncio"></a>
+            <a href="http://vidaaoquadrado.ml">  <img src="Vida%C2%B2.jpg" width="95%" height="75%" title="Vida ao Quadrado Anúncio" alt="0Vida ao Quadrado Anúncio"></a></center>
+        </div>
+          
+       
+        <div class="janelaprincipal">
+      <center>
+            
+            <h1>F.A.Q. - PERGUNTAS FREQUENTES </h1>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          
+          <i>Mudar o destino de um animal abandonado é tudo de bom. Mas futuros donos ainda têm dúvidas sobre o antes e o depois da adoção. Conversamos com especialistas e aqui estão as respostas de que você precisa.</i>
+          </center>
+          
+          <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          
+          <h2>1. Um animal só pode ser adotado se estiver castrado? </h2> 
+Sim. Prevista pela lei 12.327/97, esta é uma condição imposta às ONGs. A regra, em vigor desde 2000, instituiu a Campanha de Controle da Natalidade de Cães e gatos no Município de são Paulo. Mais do que inibir o aumento de animais abandonados, a castração colabora com a boa saúde e qualidade de vida deles. Também é lei que o animal venha com o microchip implantado sob a pele. A tecnologia permite armazenar informações como, por exemplo, a origem e o endereço dos donos.
+          
+          <p>&nbsp;</p>
+          
+            <h2>2. Como prever o comportamento e o tamanho de um animal se não conheço sua origem?</h2>
+Antes de ser colocado para adoção, ele é tratado, vacinado e castrado. Durante esse processo, a entidade responsável passa a conhecer o bicho. Quando há um traço de personalidade que possa implicar dificuldades de relacionamento, os futuros donos são avisados. Em relação ao tamanho que irá atingir, não se pode afirmar com precisão. Profissionais estimam as medidas futuras do pet a partir do tamanho da pata – mas é sempre uma aposta. se estatura for uma questão importante para você, adote um adulto, que já passou da fase de crescimento.
+              
+              <p>&nbsp;</p>
+          
+              <h2>3. Animais que já sofreram maus-tratos são mais agressivos?</h2>
+Não. Pode acontecer de o bicho associar algum comando ou atitude do dono à época dos maus-tratos e, nesse caso, ficar bravo para se defender. As ONGs de adoção realizam trabalhos para recuperar animais traumatizados. Exercícios de adestramento também ajudam. É preciso apenas saber que atitude desencadeia a reação negativa e evitá-la. 
+            
+            <p>&nbsp;</p>
+          
+            <h2>4. É melhor adotar um adulto ou um filhote?</h2>
+Filhotes são como crianças: dão mais trabalho no início, porém, se forem espertos e tiverem incentivo positivo, aprenderão rapidamente. Adultos podem ter adquirido certos hábitos, mas são altamente adaptáveis, tendo muitas vezes a mesma facilidade de aprendizado de um filhote. Enquanto os filhotes precisam gastar energia, os adultos são mais calmos. Independente da idade, o temperamento determina o sucesso do adestramento. Alguns são mais rápidos, outros mais lentos. o importante é sempre respeitar o tempo do animal e presenteá-lo com recompensas.
+            
+            <p>&nbsp;</p>
+          
+                  <h2>5. Como saber se o animal está realmente saudável?</h2>
+Secreção nos olhos, pelagem opaca, descamação na pele, odor na boca e nas orelhas são sinais de que há algo errado com a saúde de seu amigo. se ele não apresentar nada disso, ainda assim solicite os laudos médicos. Muitos animais disponíveis para adoção foram vítimas de violência ou passaram por tratamentos de saúde. Na carteira de vacinação de cães devem constar as vacinas antirrábica e V8. Na dos gatos, antirrábica e, se possível, a V3.
+
+                  <p>&nbsp;</p>
+          
+                  <h2>6. O bicho que já teve outro dono vai gostar de mim?</h2>
+Sim. Cães e gatos são adaptáveis e vivem o momento presente. Ao chegarem em uma nova casa não pensarão em seus donos anteriores ou no lugar em que costumavam ficar. sendo bem tratados, ficarão calmos e felizes no novo lar. Adotar é um compromisso sério. Mas podem, sim, ocorrer problemas. Algumas ONGs criaram alternativas para isso. o Clube dos Vira-Latas permite que você passe um tempo com o pet e teste a adaptação. Caso surjam contratempos incontornáveis, a instituição o aceita de volta. Na Natureza em Forma é feito o acompanhamento pós-adoção por telefone e e-mail. Desistir do animal não deve ser uma opção: ele sofre com isso. Para a Associação Humanitária de Proteção e Bem-Estar Animal, a Arca Brasil, quem deseja ter animais mas não tem certeza pode ser um “dono transitório”. Enquanto o bicho não encontrar um lar definitivo, o voluntário toma conta dele temporariamente. Basta ter espaço, tempo e recursos para bancar a saúde e a alimentação do hóspede.
+
+                  <p>&nbsp;</p>
+          
+                  <h2>7. E se eu não me adaptar ao animal ou vice-versa?</h2>
+Adotar é um compromisso sério. Mas podem, sim, ocorrer problemas. Algumas ONGs criaram alternativas para isso. o Clube dos Vira-Latas permite que você passe um tempo com o pet e teste a adaptação. Caso surjam contratempos incontornáveis, a instituição o aceita de volta. Na Natureza em Forma é feito o acompanhamento pós-adoção por telefone e e-mail. Desistir do animal não deve ser uma opção: ele sofre com isso. Para a Associação Humanitária de Proteção e Bem-Estar Animal, a Arca Brasil, quem deseja ter animais mas não tem certeza pode ser um “dono transitório”. Enquanto o bicho não encontrar um lar definitivo, o voluntário toma conta dele temporariamente. Basta ter espaço, tempo e recursos para bancar a saúde e a alimentação do hóspede.
+            
+            <p>&nbsp;</p>
+          
+                  <h2>8. Já tenho um cão ou gato e quero adotar mais um. Como pode ser feita a integração entre dois animais da mesma espécie?</h2>
+O processo de adaptação pode ser longo e exigir paciência. Profissionais recomendam que cães se conheçam fora de casa, em território neutro. saia para passear com um deles e peça a outra pessoa que traga o outro. Deixe que se cheirem e estabeleçam a hierarquia. No caso de um ficar agressivo, repreenda-o, mas não deixe de confortar ambos, demonstrando sua vontade de que convivam bem juntos. Na casa, cada um deve ter brinquedos e tigelas próprios. Com felinos, o processo é parecido. traga o novo gatinho e deixe-o em um ambiente separado. O gato mais velho sentirá o cheiro e, aos poucos, ambos poderão conviver.
+
+                  <p>&nbsp;</p>
+          
+                  <h2>9. Qual é o procedimento para adotar um pet?</h2>
+Cada centro de adoção tem suas regras, mas há medidas comuns a todos. O adotante precisa ser maior de idade e apresentar CPF, Rg e comprovante de residência. Antes de levar o bicho para casa, passará por entrevista em que será possível verificar se realmente tem condições de adotar. Feito isso, é preciso assinar um termo de responsabilidade, declarando assumir os cuidados com ele. Alguns locais, como o Centro de Controle de Zoonoses e a ONG Natureza em Forma, cobram taxas de adoção, que variam de R$ 16,20 a R$ 120.
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            
+            <b>Fonte: </b>
+            <a style="text-decoration:none;color:black" href="http://revistacasaejardim.globo.com/Casa-e-Jardim/Dicas/Pets/noticia/2013/08/nove-maiores-duvidas-de-quem-quer-adotar-um-cao-ou-gato.html" target="_blank" title="QUEM SOMOS"> Casa e Jardim</a>.
+                  
+        </div>
+      
+         <div class="rodape">
+            <div class="sobrerodape">
+       SOBRE O SITE: <br>
+            O Amigo Pet é um site sem fins lucrativos <br />composto por ONGs e voluntários protetores que atuam na defesa <br /> e bem estar animal. </div>
+            
+            
+            <div class="paginas1">
+            
+                <p>
+                <a style="text-decoration:none;color:white" href="anidisp.php" title="ADOTAR"> • Animais Disponíveis</a><br/>
+                    <a style="text-decoration:none;color:white" href="doar.html" title="DOAR BICHINHO"> • Doar um bichinho</a><br/>
+                    <a style="text-decoration:none;color:white" href="faq.html" title="F.A.Q."> • F.A.Q.</a>
+                    
+                </p>
+            
+            </div>
+            
+            <div class="paginas2">
+            <p>
+                <a style="text-decoration:none;color:white" href="quemsomos.html" title="QUEM SOMOS"> • Quem Somos</a> <br/>
+                <a style="text-decoration:none;color:white" href="#janela1" rel="modal" title="LOGIN"> • Login</a>
+                </p>
+            </div>
+            
+            <center><div class="redes">
+            <a href="https://pt-br.facebook.com/" > <img src="facebook.png" title="Facebook" width="27%" alt="Facebook" target="_blank"></a>
+            <a href="https://twitter.com/login?lang=pt" > <img src="twitter.png" title="Twitter" width="27%" alt="Twitter" target="_blank"></a>
+                
+            </div> <!--div redes-->
+                </center>
+            
+            
+            <center> <div class="credito">Amigo Pet © 2017 - Todos os direito reservados - Designed by Grupo 2(dois), Programador Web - Senac, Plug Minas.</div></center> 
+      </div>
+            
+        </body>
+</html>
